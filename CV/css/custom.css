@@ -15,6 +15,13 @@ body {
   /* position: relative; */
 }
 
+.title-and-city {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 .content {
   background-color: white;
   width: 1000px;
@@ -103,6 +110,7 @@ h2 {
 }
 
 .experience-description {
+  margin-top: 5px;
   text-align: justify;
 }
 
@@ -118,14 +126,14 @@ h2 {
   outline: none;
   color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .8);
   cursor: pointer;
   transition: .5s;
 }
 
-#printCv:hover{
+#printCv:hover {
   background-color: #2b2741;
-  box-shadow: 0 0 20px rgba(0,0,0,.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .8);
 }
 
 @media screen and (max-width: 860px) {
@@ -157,6 +165,7 @@ span {
     margin: 15px 0px;
     line-height: normal;
   }
+
   header {
     background-color: #2b2741;
     height: 200px;
@@ -165,6 +174,7 @@ span {
     align-items: center;
     margin-bottom: 80px;
   }
+
   header img {
     width: 190px;
     height: 190px;
@@ -174,14 +184,16 @@ span {
 }
 
 @media print {
-  
-  body *{
+
+  body * {
     visibility: hidden;
   }
+
   body {
     background-color: white;
   }
-  .content *{
+
+  .content * {
     visibility: visible;
   }
 

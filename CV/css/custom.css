@@ -27,6 +27,7 @@ body {
   width: 1000px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .menu {
@@ -39,7 +40,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 header {
@@ -93,7 +94,7 @@ header img {
 }
 
 .category {
-  margin: 30px 25px 0;
+  margin: 25px 25px 0;
 }
 
 form {
@@ -112,6 +113,10 @@ h2 {
 .experience-description {
   margin-top: 5px;
   text-align: justify;
+}
+
+.skills {
+  text-align: center;
 }
 
 #printCv {
@@ -153,6 +158,35 @@ h2 {
 span {
   font-weight: normal;
 }
+
+.fontimg {
+  font-size: 25px;
+  width: 25px;
+  /* height: 45px; */
+  color: #2b2741;
+}
+
+.contact {
+  position: absolute;
+  top: 170px;
+  left: 320px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkedInA, .emailA, .phoneA {
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
   .header-text {

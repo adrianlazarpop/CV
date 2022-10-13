@@ -45,6 +45,7 @@ a {
 
 header {
   background-color: #2b2741;
+  /* background-color: pink; */
   height: 150px;
   display: flex;
   flex-direction: row;

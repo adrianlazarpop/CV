@@ -1,0 +1,8 @@
+Python - with framework - Django vs Flask
+
+Sectiunea: Proiecte personale / Portfolio:
+	-> SocialMedia App
+	-> Online Store
+	-> ToDo List
+	-> Generate QR ?
+	

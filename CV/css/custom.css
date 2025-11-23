@@ -176,7 +176,9 @@ span {
   flex-direction: column;
 }
 
-.linkedInA, .emailA, .phoneA {
+.linkedInA,
+.emailA,
+.phoneA {
   display: flex;
   align-items: center;
 
@@ -216,6 +218,30 @@ span {
     position: static;
     border: none;
   }
+}
+
+.title-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  /* left & right share remaining space */
+  align-items: baseline;
+  /* lines up text nicely */
+  /* gap: .5rem; */
+}
+
+.role {
+  justify-self: start;
+  font-weight: 700;
+}
+
+.company {
+  justify-self: center;
+  font-weight: 700;
+  text-align: center;
+}
+
+.dates {
+  justify-self: end;
 }
 
 @media print {

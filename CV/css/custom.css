@@ -244,6 +244,70 @@ span {
   justify-self: end;
 }
 
+
+
+
+
+/* Section title */
+/* .skills h2 {
+  margin: 0 0 .6rem;
+} */
+
+/* One row: group name + chips */
+.skills-group {
+  display: flex;
+  align-items: baseline;
+  /* aligns text nicely */
+  gap: .75rem;
+  /* space between name and chips */
+  margin: .4rem 0;
+  /* tighter vertical spacing */
+}
+
+/* Group name stays compact, no extra margin */
+.skills-group h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  white-space: nowrap;
+  /* keep the name on one line */
+  flex: 0 0 auto;
+  /* don’t stretch the name */
+}
+
+/* Chips take the remaining width and wrap */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  /* occupy the row’s remaining space */
+}
+
+/* Compact chip style */
+.chips li {
+  padding: .18rem .5rem;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-size: .88rem;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media print {
 
   body * {
@@ -258,4 +322,17 @@ span {
     visibility: visible;
   }
 
+}
+
+
+
+/* Compact for narrow layouts */
+@media (max-width: 640px) {
+  .chips {
+    gap: .35rem .5rem;
+  }
+
+  .chips li {
+    font-size: .88rem;
+  }
 }
